@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
+
+.splashText {
+  position: relative;
+  font-family: "Poppins";
+}
+
+.PrelaodCon {
+  opacity: 1;
+  animation-name: splashFade;
+  animation-duration: 3.95s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+.splashCon {
+  opacity: 1;
+  /* background-image: linear-gradient(to right bottom, #051937, #003f64, #006a90, #0099b7, #03c9d7); */
+}
+.splashLogo {
+  animation-name: splash;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  font-family: "Poppins";
+}
+.splashTextCon {
+  animation-name: splash;
+  animation-duration: 3s;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes splashFade {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes splash {
+  0% {
+    opacity: 0;
+    transform: translateY(42px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeAnimated {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1.65s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* button loaded */
+.confirm_transfer {
+  transition: all 0.2s;
+  position: relative;
+}
+.transfer_loading .transfer_text {
+  visibility: hidden;
+  opacity: 0;
+}
+.transfer_loading:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3.5px solid transparent;
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: loading-spinner 1s ease infinite;
+}
+@keyframes loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Message popup */
+.error-msg {
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 29%;
+  z-index: 1000;
+  width: 85%;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  background-image: linear-gradient(to right, #fca5a5, rgba(255, 255, 255, 0.89) 19%);
+  box-shadow: 0px 3px 8px #fca5a5;
+}
+.success-msg {
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 29%;
+  z-index: 1000;
+  width: 85%;
+  color: #22c55e;
+  border: 1px solid #22c55e;
+  background-image: linear-gradient(to right, #86efac, rgba(255, 255, 255, 0.89) 19%);
+  box-shadow: 0px 3px 8px #86efac;
+}
+
+/* Fade out animated */
+.fadeOutAnimated {
+  animation-name: fadeOut;
+}
+@keyframes fadeOut {
+  0% {opacity: 0;display: none;top: 31%;}
+  15% {opacity: 1;display: block;top: 29%;}
+  80% {opacity: 1;display: block;top: 29%;}
+  100% {opacity: 0;display: none;top: 24%;}
+}
+.fadeOutAnimated2 {
+  animation-name: fadeOut2;
+}
+@keyframes fadeOut2 {
+  0% {opacity: 0;display: none;top: 31%;}
+  15% {opacity: 1;display: block;top: 29%;}
+  100% {opacity: 1;display: block;top: 29%;}
+}

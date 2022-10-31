@@ -169,7 +169,7 @@ export function AccountBox(props) {
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <div className="w-screen h-screen dark:bg-main-dark-bg">
-        <div className="pt-24 rounded-3xl flex justify-center items-center fadeAnimatedss">
+        <div className="pt-24 rounded-3xl flex justify-center items-center fadeAnimated">
         <AccountContext.Provider value={contextValue}>
           <BoxContainer 
             style={{ 

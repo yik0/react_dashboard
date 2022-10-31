@@ -50,7 +50,7 @@ const Preloader2 = () => {
         setTimeout(() => {
           setCompleted(true);
         },1900);
-    }, 2800);
+    }, 2600);
   }, []);
 
   return (

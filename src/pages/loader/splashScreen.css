@@ -63,7 +63,7 @@
   opacity: 0;
   animation-name: fadeIn;
   animation-duration: 1.65s;
-  animation-delay: 6s;
+  animation-delay: 4.5s;
   animation-fill-mode: forwards;
   animation-iteration-count: 1;
 }

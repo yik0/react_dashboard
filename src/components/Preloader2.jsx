@@ -49,15 +49,15 @@ const Preloader2 = () => {
 
         setTimeout(() => {
           setCompleted(true);
-        },3000);
-    }, 3000);
+        },1900);
+    }, 2800);
   }, []);
 
   return (
     <>
     { loading && !completed && (
       <div className={currentMode === 'Dark' ? 'dark' : ''} style={{ overflow: 'hidden' }}>
-        <div className="w-screen h-screen relative nav-item flex justify-center items-center overflow-hidden splashCon" style={{ background: `${currentColor}` }}>
+        <div className="w-screen h-screen fixed flex justify-center items-center overflow-hidden splashCon" style={{ background: `${currentColor}`, zIndex: '9999' }}>
           <div className="block text-center text-white">
             <div className="block mx-auto mb-4 pt-2 bg-white rounded-full w-40 h-40 splashLogo">
               <Lottie options={defaultOptions2}

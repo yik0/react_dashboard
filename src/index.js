@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ContextProvider>
       <BrowserRouter>
-          {/* <Preloader2 /> */}
+          <Preloader2 />
           <App />
           {/* <AccountBox /> */}
       </BrowserRouter>
